@@ -1,0 +1,42 @@
+/* Ensure the footer sticks to the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 10%; /* Position 10% from the bottom of the viewport */
+  right: 10%; /* Position 10% from the right of the viewport */
+  transform: translate(50%, -50%);
+}
+
+.sections-container {
+  max-width: 100%; /* Adjust as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-box {
+ /* display: none;  Initially hide all sections */
+}
+
+.section-box.active {
+  display: block; /* Show active section */
+}
+
+
+/* Add styling for the image and adjust layout as needed */
+.section-box img {
+  max-width: 100%; /* Ensure image is responsive */
+  border-radius: 8px; /* Rounded corners for image */
+}
+
+.section-box .flex {
+  align-items: center; /* Center align items vertically */
+}
