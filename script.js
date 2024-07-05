@@ -9,12 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Background images array
   const bgImages = [
-    './images/banner-img1.webp',
-    './images/banner-img2.jpg',
-    './images/banner-img3.jpg',
-    './images/banner-img4.jpg',
-    './images/banner-img5.jpg'
-    
+    './images/ban1.jpg',
+    './images/ban3.jpg',
+    './images/ban4.jpg'    
   ];
 
   let currentBgIndex = 0;

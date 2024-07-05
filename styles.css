@@ -9,6 +9,14 @@ main {
   flex: 1;
 }
 
+.main-heading {
+  color: #FFD700; /* Gold */
+}
+
+.sub-heading {
+  color: #FF4500; /* Orange Red */
+}
+
 .fixed-button {
   position: fixed;
   bottom: 10%; /* Position 10% from the bottom of the viewport */
@@ -23,15 +31,9 @@ main {
 }
 
 .section-box {
- /* display: none;  Initially hide all sections */
+  position: relative; /* Ensure position for absolute elements inside */
 }
 
-.section-box.active {
-  display: block; /* Show active section */
-}
-
-
-/* Add styling for the image and adjust layout as needed */
 .section-box img {
   max-width: 100%; /* Ensure image is responsive */
   border-radius: 8px; /* Rounded corners for image */
@@ -40,3 +42,28 @@ main {
 .section-box .flex {
   align-items: center; /* Center align items vertically */
 }
+
+.action-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10; /* Ensure button is above other content */
+}
+
+.action-button:hover {
+  background-color: #2563eb;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.font-tdm {
+  font-family: 'Tiro Devanagari Marathi', serif;
+}
+
