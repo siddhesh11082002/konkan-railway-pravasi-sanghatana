@@ -1,4 +1,59 @@
-/* Ensure the footer sticks to the bottom */
+.bg-gray-900 {
+  background-color: #333; /* Adjust color as needed */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333; /* Adjust color as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
+.nav-logo img {
+  height: 40px; /* Adjust height of logo image */
+}
+.nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-links li {
+  margin-right: 10px;
+}
+.nav-links .nav-button {
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.nav-links .nav-button:hover {
+  background-color: #1a1a1a; /* Adjust hover color as needed */
+}
+
+header {
+  position: relative;
+  z-index: 1; /* Ensure header content is above the overlay */
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  z-index: -1; 
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -10,39 +65,47 @@ main {
 }
 
 .main-heading {
-  color: #FFD700; /* Gold */
+  color: #92edfd;
 }
 
 .sub-heading {
-  color: #FF4500; /* Orange Red */
+  color: #925df5; 
 }
 
 .fixed-button {
   position: fixed;
-  bottom: 10%; /* Position 10% from the bottom of the viewport */
-  right: 10%; /* Position 10% from the right of the viewport */
+  bottom: 10%;
+  right: 10%; 
   transform: translate(50%, -50%);
 }
 
 .sections-container {
-  max-width: 100%; /* Adjust as needed */
+  max-width: 100%; 
   margin-left: auto;
   margin-right: auto;
 }
 
+.section-box .flex {
+  align-items: center; 
+}
 .section-box {
-  position: relative; /* Ensure position for absolute elements inside */
+  position: relative;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .section-box img {
-  max-width: 100%; /* Ensure image is responsive */
-  border-radius: 8px; /* Rounded corners for image */
+  max-width: 100%; 
+  border-radius: 0.5rem; 
+  margin-bottom: 1rem; 
 }
 
-.section-box .flex {
-  align-items: center; /* Center align items vertically */
+.section-box .text-center {
+  text-align: center;
 }
-
 .action-button {
   position: absolute;
   bottom: 20px;
@@ -55,15 +118,55 @@ main {
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  z-index: 10; /* Ensure button is above other content */
+  z-index: 10; 
 }
 
 .action-button:hover {
   background-color: #2563eb;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
+.img-container {
+  max-height: 150px; 
+  overflow: hidden; 
+}
+
+.max-h-full {
+  max-height: 100%; 
+  object-fit: cover; 
+}
+
+.bg-orange-500 {
+  background-color: #f0e5dd; 
+}
+
+.p-4 {
+  padding: 1rem; 
+}
+
+.mb-4 {
+  margin-bottom: 1rem; 
+}
+
+.flex {
+  display: flex; 
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem; 
+}
+
+.text-center {
+  text-align: center; 
+}
+
+.w-full {
+  width: 100%; 
+}
 
 .font-tdm {
   font-family: 'Tiro Devanagari Marathi', serif;
 }
-
