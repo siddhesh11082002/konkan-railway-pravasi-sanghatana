@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.getElementById('sendEmailBtn').addEventListener('click', function() {
-      var recipients = "ashwini.vaishnav@gmail.com,moeitoffice@gmail.com,vsomannavijayanagara@gmail.com,ravneetbittu@gmail.com,connect@mygov.nic.in,ravindrachavan.mla@gmail.com,narayan.rane@gov.in,narayanrane52@gmail.com,narayan.rane@sansad.nic.in,speakerrsn1@gmail.com,waikarravindra@gmail.com,secy.rb-mh@nic.in,pacollsin@gmail.com , collestn02.si-mh.nic.in ";
+      var recipients = "ashwini.vaishnav@gmail.com,moeitoffice@gmail.com,vsomannavijayanagara@gmail.com,ravneetbittu@gmail.com,connect@mygov.nic.in,ravindrachavan.mla@gmail.com,narayan.rane@gov.in,narayanrane52@gmail.com,narayan.rane@sansad.nic.in,speakerrsn1@gmail.com,waikarravindra@gmail.com,secy.rb-mh@nic.in,pacollsin@gmail.com , collestn02.si-mh.nic.in , home_transport5@maharashtra.gov.in ,acs.transport@maharashtra.gov.in";
       var cc = "Cm@maharashtra.gov.in,cmpro@maharashtra.gov.in,dcm@maharashtra.gov.in,kesarkardeepak@gmail.com,udaysamant11@gmail.com,niranjanvdavkhare@gmail.com,Cmd@krcl.co.in,gm@cr.railnet.gov.in,sm.haryan@krcl.co.in,secy.cmd@krcl.co.in,secgm@cr.railnet.gov.in,rrmrn@krcl.co.in,cpro@cr.railnet.gov.in,nnr23682@gmail.com,shekhargnikam@gmail.com,mla@rajupatilmns.com,rajan825@gmail.com,vnaik95@gmail.com , collestn02.si-mh.nic.in ";
       var bcc = "swaditerminus@gmail.com"; 
   var subject = "Request for Swift Action on Sawantwadi Railway Terminus Concerns";
